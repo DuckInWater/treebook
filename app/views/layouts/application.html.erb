@@ -22,7 +22,11 @@
     </div>
   </div>
   <div class="container">
-  <%= yield %>
+    <!--Added for use with Devise -->
+    <p class="notice"><%= notice %></p
+    <p class="alert"><%= alert %></p>
+
+    <%= yield %>
   </div>
 
 <em> By Michael </em>
