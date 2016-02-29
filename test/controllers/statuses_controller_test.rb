@@ -70,7 +70,7 @@ class StatusesControllerTest < ActionController::TestCase
     assert_difference('Status.count', -1) do
       delete :destroy, id: @status
     end
-
     assert_redirected_to statuses_path
   end
+    
 end
